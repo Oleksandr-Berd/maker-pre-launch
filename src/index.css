@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "ManropeBold";
+  src: local("Manrope"),
+    url("./assets/fonts/Manrope/static/Manrope-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ManropeMedium";
+  src: local("Manrope"),
+    url("./assets/fonts/Manrope/static/Manrope-Medium.ttf") format("truetype");
+}
+
+
+body {
+  margin: 0;
+  background-color: #080C20;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+  margin: 0;
+  font-family: "ManropeBold";
+  color: #fff;
+}
+
+p{
+  margin: 0;
+  font-family: "ManropeMedium";
+  color: #777F98;
+}
+a {
+  text-decoration: none;
+  font-family: "ManropeMedium";
+}
