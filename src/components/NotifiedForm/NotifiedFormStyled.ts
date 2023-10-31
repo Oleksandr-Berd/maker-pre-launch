@@ -1,34 +1,34 @@
 import styled from "@emotion/styled";
 
 export const GeneralWrapper = styled.div`
-padding-bottom: 164px;
-padding-left: 24px;
-padding-right: 24px;
+  padding-bottom: 164px;
+  padding-left: 24px;
+  padding-right: 24px;
 
-text-align: center;
-`
+  text-align: center;
+`;
 
 export const Title = styled.h3`
-width: 220px;
+  width: 220px;
 
-margin-bottom: 31px;
-margin-left: auto;
-margin-right: auto;
+  margin-bottom: 31px;
+  margin-left: auto;
+  margin-right: auto;
 
-font-size: 24px;
-`
+  font-size: 24px;
+`;
 
 export const FormStyled = styled.form`
-display: flex;
-flex-direction: column;
-`
+  display: flex;
+  flex-direction: column;
+`;
 
 export const InputStyled = styled.input`
+  width: calc(100% - 18px);
+
   padding-top: 12px;
   padding-bottom: 11px;
   padding-left: 18px;
-
-  margin-bottom: 24px;
 
   background-color: #093f68;
   color: #fff;
@@ -58,4 +58,12 @@ export const SubmitButton = styled.button`
 
   border: none;
   border-radius: 24px;
+`;
+
+
+export const ErrorStyled = styled.p`
+  color: #ff2965;
+
+  font-size: 12px;
+  line-height: 2.08;
 `;
