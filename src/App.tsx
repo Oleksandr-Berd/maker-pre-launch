@@ -1,3 +1,4 @@
+import About from "./components/About/About";
 import Intro from "./components/Intro/Intro";
 import Header from "./layouts/Header/Header";
 
@@ -6,6 +7,7 @@ function App() {
     <main>
       <Header/>
       <Intro/>
+      <About/>
     </main>
   );
 }
