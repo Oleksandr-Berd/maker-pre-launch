@@ -20,7 +20,7 @@ export const ContentWrapper = styled.div<IntroStyle>`
     padding-left: 155px;
     padding-right: 156px;
 
-    background-image: url(${props => props.bg3});
+    background-image: url(${(props) => props.bg3});
     background-position: center;
 
     &::before {
@@ -54,8 +54,15 @@ export const Title = styled.h2`
     color: #3ee9e5;
   }
 
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
     width: 357px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 530px;
+
+    font-size: 48px;
+    line-height: 1.67;
   }
 `;
 
@@ -63,9 +70,11 @@ export const TitleWrapper = styled.div`
   margin-bottom: 23px;
 
   @media (min-width: 768px) {
-margin-bottom: 24px;
+    margin-bottom: 24px;
+  }
 
-
+  @media (min-width: 1440px) {
+    margin-bottom: 24px;
   }
 `;
 
@@ -74,4 +83,12 @@ export const Content = styled.p`
 
   font-size: 15px;
   line-height: 1.67;
+
+  @media (min-width: 1440px){
+    width: 540px;
+
+    margin-bottom: 64px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
