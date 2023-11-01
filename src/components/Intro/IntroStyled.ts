@@ -39,6 +39,10 @@ export const ContentWrapper = styled.div<IntroStyle>`
       content: url(${(props) => props.bg2});
     }
   }
+
+  @media (min-width: 1440px){
+    padding-bottom: 202px;
+  }
 `;
 
 export const Title = styled.h2`

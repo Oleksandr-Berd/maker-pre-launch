@@ -13,11 +13,26 @@ export const List = styled.ul`
     padding-right: 98px;
     padding-bottom: 141px;
   }
+
+  @media (min-width: 1440px){
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    padding-bottom: 202px;
+    padding-left: 165px;
+    padding-right: 165px;
+  }
 `;
 
 export const Item = styled.li`
   &:not(:last-child) {
     margin-bottom: 56px;
+
+    @media (min-width: 1440px) {
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
   }
 
   @media (min-width: 768px) {
@@ -25,8 +40,24 @@ export const Item = styled.li`
     flex-direction: row;
     align-items: center;
 
-    &:nth-child(1), &:nth-child(3){
-        margin-left: 58px;
+    @media (min-width: 1440px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &:nth-child(1),
+    &:nth-child(3) {
+      margin-left: 58px;
+
+      @media (min-width: 1440px) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  @media (min-width: 1440px) {
+    :nth-child(2), &:nth-child(4){
+        margin-top: 48px;
     }
   }
 `;
@@ -46,12 +77,23 @@ export const Figure = styled.div<IntroStyle>`
   background-image: url(${(props) => props.bg});
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: 1440px){
+width: 160px;
+height: 164px;
+
+    margin-bottom: 48px;
+  }
 `;
 
 export const Title = styled.h3`
   margin-bottom: 11px;
 
   font-size: 18px;
+
+  @media (min-width: 1440px){
+    margin-bottom: 23px;
+  }
 `;
 
 export const Content = styled.p`
@@ -66,5 +108,11 @@ export const ContentWrapper = styled.div`
     margin-left: 55px;
 
     text-align: left;
+  }
+
+  @media (min-width: 1440px){
+    width: 255px;
+
+    margin-left: 0;
   }
 `;
