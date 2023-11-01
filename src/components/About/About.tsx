@@ -11,35 +11,43 @@ const About:React.FC = () => {
       <SC.List>
         <SC.Item>
           <SC.Figure bg={aboutBg1}></SC.Figure>
-          <SC.Title>Indulge your passions</SC.Title>
-          <SC.Content>
-            Your passions shouldn't be just for the weekend. Earn a living doing
-            what you love.
-          </SC.Content>
+          <SC.ContentWrapper>
+            <SC.Title>Indulge your passions</SC.Title>
+            <SC.Content>
+              Your passions shouldn't be just for the weekend. Earn a living
+              doing what you love.
+            </SC.Content>
+          </SC.ContentWrapper>
         </SC.Item>
         <SC.Item>
           <SC.Figure bg={aboutBg2}></SC.Figure>
-          <SC.Title>Gain financial freedom</SC.Title>
-          <SC.Content>
-            Start making money work for you. There’s nothing quite like earning
-            while you sleep.
-          </SC.Content>
+          <SC.ContentWrapper>
+            <SC.Title>Gain financial freedom</SC.Title>
+            <SC.Content>
+              Start making money work for you. There’s nothing quite like
+              earning while you sleep.
+            </SC.Content>
+          </SC.ContentWrapper>
         </SC.Item>
         <SC.Item>
           <SC.Figure bg={aboutBg3}></SC.Figure>
-          <SC.Title>Choose your lifestyle</SC.Title>
-          <SC.Content>
-            Own your daily schedule. Fancy a lie-in? Go for it! Take charge of
-            your week.
-          </SC.Content>
+          <SC.ContentWrapper>
+            <SC.Title>Choose your lifestyle</SC.Title>
+            <SC.Content>
+              Own your daily schedule. Fancy a lie-in? Go for it! Take charge of
+              your week.
+            </SC.Content>
+          </SC.ContentWrapper>
         </SC.Item>
         <SC.Item>
           <SC.Figure bg={aboutBg4}></SC.Figure>
-          <SC.Title>Work from anywhere</SC.Title>
-          <SC.Content>
-            Selling online means not being pinned down. Want to work AND travel?
-            Go for it!
-          </SC.Content>
+          <SC.ContentWrapper>
+            <SC.Title>Work from anywhere</SC.Title>
+            <SC.Content>
+              Selling online means not being pinned down. Want to work AND
+              travel? Go for it!
+            </SC.Content>
+          </SC.ContentWrapper>
         </SC.Item>
       </SC.List>
     );
