@@ -7,3 +7,7 @@ export type IntroStyle = {
 export type FormType = {
     formSubmit:(email:string) => void
 }
+
+export type InputStyle = {
+    status: string,
+}

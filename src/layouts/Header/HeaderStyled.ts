@@ -15,7 +15,7 @@ padding-bottom: 66px;
     padding-bottom: 77px;
 }
 
-@media {
+@media (min-width: 1440px){
     padding-top: 81px;
     padding-bottom: 114px;
     padding-left: 165px;
