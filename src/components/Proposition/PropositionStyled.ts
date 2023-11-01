@@ -13,17 +13,34 @@ export const MainTitleWrapper = styled.div`
     padding-left: 97px;
     padding-right: 98px;
   }
+
+  @media (min-width: 1440px){
+    margin-bottom: 105px;
+  }
 `;
 
 export const MainTitle = styled.h3`
   margin-bottom: 27px;
 
   font-size: 24px;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 24px;
+
+    font-size: 32px;
+  }
 `;
 
 export const MainContent = styled.p`
   font-size: 15px;
   line-height: 1.67;
+
+  @media (min-width: 1440px) {
+    width: 540px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 export const List = styled.ul`
@@ -35,6 +52,16 @@ export const List = styled.ul`
     padding-bottom: 119px;
     padding-left: 161px;
     padding-right: 162px;
+  }
+
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding-bottom: 203px;
+    padding-left: 260px;
+    padding-right: 260px;
   }
 `;
 
@@ -69,13 +96,19 @@ export const Item = styled.li<IntroStyle>`
 
     background-color: #093f68;
 
+    @media (min-width: 1440px) {
+      width: 445px;
+      height: 425px;
+
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
+
     & > h5,
     & p,
     & h4 {
       color: #fff;
     }
-
-  
 
     & svg {
       fill: #3ee9e5;
@@ -84,6 +117,11 @@ export const Item = styled.li<IntroStyle>`
 
   &:last-child {
     background-color: #3ee9e5;
+
+    @media (min-width: 1440px) {
+      width: 445px;
+      height: 449px;
+    }
 
     & > h5,
     & p,
