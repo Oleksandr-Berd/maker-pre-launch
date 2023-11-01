@@ -18,7 +18,7 @@ const Proposition = () => {
       <SC.List>
         <SC.Item bg={bg1}>
           <SC.Title>Did your toe</SC.Title>
-          <SC.Content>
+          <SC.Content style={{ color: "#777f98" }}>
             Just getting started? No problem at all! Our free plan will take you
             a long way.
           </SC.Content>

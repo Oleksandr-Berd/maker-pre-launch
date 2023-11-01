@@ -1,36 +1,41 @@
 import styled from "@emotion/styled";
 import { IntroStyle } from "../../utils/types";
 
-
 export const MainTitleWrapper = styled.div`
-padding-left: 24px;
-padding-right: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 
-margin-bottom: 79px;
+  margin-bottom: 79px;
 
-text-align: center;
+  text-align: center;
 
-@media (min-width: 768px){
-    padding-left: 97;
+  @media (min-width: 768px) {
+    padding-left: 97px;
     padding-right: 98px;
-}
-`
+  }
+`;
 
 export const MainTitle = styled.h3`
-margin-bottom: 27px;
+  margin-bottom: 27px;
 
-font-size: 24px;
-`
+  font-size: 24px;
+`;
 
 export const MainContent = styled.p`
-font-size: 15px;
-line-height: 1.67;
-`
+  font-size: 15px;
+  line-height: 1.67;
+`;
 
 export const List = styled.ul`
   padding-bottom: 144px;
   padding-left: 24px;
   padding-right: 24px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 119px;
+    padding-left: 161px;
+    padding-right: 162px;
+  }
 `;
 
 export const Item = styled.li<IntroStyle>`
@@ -42,6 +47,12 @@ export const Item = styled.li<IntroStyle>`
   padding-right: 29px;
 
   border-radius: 8px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 48px;
+    padding-left: 38px;
+    padding-right: 38px;
+  }
 
   &::before {
     position: absolute;
@@ -63,6 +74,8 @@ export const Item = styled.li<IntroStyle>`
     & h4 {
       color: #fff;
     }
+
+  
 
     & svg {
       fill: #3ee9e5;
@@ -93,6 +106,8 @@ export const Title = styled.h5`
 
 export const Content = styled.p`
   margin-bottom: 26px;
+
+  color: #777f98;
 
   font-size: 15px;
   line-height: 1.67;
