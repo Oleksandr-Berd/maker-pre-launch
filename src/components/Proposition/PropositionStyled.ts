@@ -1,6 +1,32 @@
 import styled from "@emotion/styled";
 import { IntroStyle } from "../../utils/types";
 
+
+export const MainTitleWrapper = styled.div`
+padding-left: 24px;
+padding-right: 24px;
+
+margin-bottom: 79px;
+
+text-align: center;
+
+@media (min-width: 768px){
+    padding-left: 97;
+    padding-right: 98px;
+}
+`
+
+export const MainTitle = styled.h3`
+margin-bottom: 27px;
+
+font-size: 24px;
+`
+
+export const MainContent = styled.p`
+font-size: 15px;
+line-height: 1.67;
+`
+
 export const List = styled.ul`
   padding-bottom: 144px;
   padding-left: 24px;
