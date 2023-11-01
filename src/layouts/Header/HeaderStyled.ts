@@ -14,4 +14,10 @@ padding-bottom: 66px;
     padding-left: 39px;
     padding-bottom: 77px;
 }
+
+@media {
+    padding-top: 81px;
+    padding-bottom: 114px;
+    padding-left: 165px;
+}
 `
