@@ -1,6 +1,8 @@
 export type IntroStyle = {
-    bg: string,
-}
+  bg: string | null;
+  bg2?: string | null;
+  bg3?: string | null;
+};
 
 export type FormType = {
     formSubmit:(email:string) => void
