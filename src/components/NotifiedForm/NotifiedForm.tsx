@@ -1,9 +1,10 @@
 import * as Yup from "yup";
 import { useFormik } from "formik";
+import { ChangeEvent } from "react";
 
 import * as SC from "./NotifiedFormStyled";
 import { FormType } from '../../utils/types';
-import { ChangeEvent } from "react";
+import bgTab from "../../assets/images/bg_form_tab.svg"
 
 const NotifiedForm:React.FC<FormType> = ({formSubmit}) => {
   const validationSchema = Yup.object().shape({
@@ -38,10 +39,10 @@ const handleChange = (
 };
 
   return (
-    <SC.GeneralWrapper>
+    <SC.GeneralWrapper bg={bgTab}>
       <SC.Title>Get notified when we launch</SC.Title>
       <SC.FormStyled onSubmit={handleSubmit}>
-        <div>
+        <SC.InputWrapper>
           <SC.InputStyled
           name="email"
             type="text"
@@ -50,7 +51,7 @@ const handleChange = (
             onChange={handleChange}
           />
           {formik.errors.email ? <SC.ErrorStyled>{formik.errors.email}</SC.ErrorStyled> : <SC.ErrorStyled style={{visibility:"hidden"}}>just an empty space</SC.ErrorStyled>}
-        </div>
+        </SC.InputWrapper>
         <SC.SubmitButton>Get notified</SC.SubmitButton>
       </SC.FormStyled>
     </SC.GeneralWrapper>
